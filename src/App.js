@@ -1,10 +1,11 @@
-import './App.css';
-import MainPage from './pages/mainPage/mainPage';
+import React from 'react';
+import Intro from './pages/Intro'
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      <Intro/>
+      
     </div>
   );
 }

@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+
+.header{
+    height: 100px;
+    position: absolute;
+}
+
+
+/* Nav */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Intro__Main */
+
+.intro__main{
+    font-family: "Montserrat", sans-serif;
+}
