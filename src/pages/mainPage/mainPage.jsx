@@ -27,7 +27,7 @@ const MainPage = ()=> {
                         <li><a className='a1' href="#">Партнёры</a></li>
                         <li><a className='a1' href="#">Новости</a></li>
                     </ul>
-                    <button><a href="">Вход</a></button>
+                    <button>Вход</button>
                  </nav>
             </div> 
         </header>
@@ -97,6 +97,7 @@ const MainPage = ()=> {
                 </div>
             </div>
             <div className="pblock">
+                <h1>Кому нужен Semantir:</h1>
             </div>
             </div>
         </main>
