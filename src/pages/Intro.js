@@ -1,14 +1,14 @@
 import React from 'react';
-import './assets/css/styles.css';
+// import './assets/css/styles.css';
 import Header from '../pages/companent/Header';
 import IntroMain from './companent/IntroMain';
 
 const Intro = () => {
 
     return (
-        <div className='container'>
+        <div>
                 <Header/>
-                {/* <IntroMain/> */}
+                <IntroMain/>
         </div>
     )
 }
