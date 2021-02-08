@@ -14,36 +14,86 @@
 .container{
     width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
+    /* min-width: device-width; */
 }
 
+@media (max-width: 1200px){
+    .container{
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto;
+        /* min-width: device-width; */
+    }
+}
+@media (max-width: 992px){
+    .container{
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+        /* min-width: device-width; */
+    }
+}
+@media (max-width: 767px){
+    .container{
+        width: auto;
+        max-width: none;
+        margin: 0 auto;
+    }
+}
 /* Header */
 
 
 .header{
     background-color: #F9F6FF;
-    height: 100px;
+    height: 10%;
     position:sticky;
     top: 0;
 }
 
 .header__iner{
     display: flex;
-    justify-content: space-between;
-    margin: auto 10px;
+    /* justify-content: space-between; */
+    /* margin: auto 10px; */
+    /* min-width: 100%; */
     
 }
 
 /* Logo */
 
 .semantir__logo{
-    margin: 20px 33px 18px 76px;
+    margin: 15% auto 18px 30%;
+    width: 120px;
+    height: 60px;
 }
+
+@media(max-width: 762px){
+    .semantir__logo{
+        margin: 15% auto 18px 5%;
+        width: 120px;
+        height: 60px;
+    }
+}
+
+
 
 /* Nav */
 
 .nav{
     color: #000;
-    margin: 38px 0px 0px 65px;
+    margin: 2.9% auto auto 25%;
+    
+    justify-content: space-between;
+}
+
+
+
+@media(max-width:762px){
+    .nav{
+        color: #000;
+        margin: 4.5% auto auto 3%;
+        /* display: flex; */
+    }
 }
 
 .nav__link{
@@ -52,38 +102,38 @@
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     text-decoration:none;
-    margin: auto 32px;
-    /* начало черновик */
-    position: relative;
-    transition: color 0.2s linear;
-    /* конец черновика  */
+    margin: auto 25px;
+    /* начало черновик */           /**/
+    position: relative;             /**/
+    transition: color 0.2s linear;  /**/
+    /* конец черновика  */          /**/
 }
 
-/* начало черновика */
-
-.nav__link:hover{
-    color: #472A7E;
-}
-
-.nav__link:after{
-    content: "";
-    /* display: block; */
-    /* display: none; */
-    opacity: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #331B54;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-}
-
-.nav__link:hover::after{
-    opacity: 1;
-}
-
-/* конец черновика */
+/* начало черновика                  */
+                                     /**/
+.nav__link:hover{                    /**/
+    color: #472A7E;                /**/
+}                                    /**/
+                                     /**/
+.nav__link:after{                    /**/
+    content: "";                     /**/
+    /* display: block; */            /**/
+    /* display: none; */             /**/
+    opacity: 0;                      /**/
+    width: 100%;                     /**/
+    height: 1px;                     /**/
+    background-color: #331B54;     /**/
+    position: absolute;              /**/
+    top: 100%;                       /**/
+    left: 0;                         /**/
+    z-index: 1;                      /**/
+}                                    /**/
+                                     /**/
+.nav__link:hover::after{             /**/
+    opacity: 1;                      /**/
+}                                    /**/
+                                     /**/
+/* конец черновика */                /**/
 
 /* Button */
 
@@ -91,18 +141,34 @@
     background-color: #472A7E;
     width: 84px;
     height: 41px;
-    padding: 12px 24px;
+    padding: 12px 24px 12px 24px; 
     border-radius: 4px;
     color:#fff;
-    margin: 28px 65px 20px 20px;
-    /* border: solid none; */
-    text-decoration: none;
+    margin: 2% 4% 2% 3%;
     position: relative;
-    border-color: #472A7E;
+    border: solid  #472A7E;
+}
+
+@media(max-width:762px){
+    .nav__button{
+        margin: 25px 4% 2% 3%;    
+    }
+}
+
+.nav__button:hover{
+    background-color: #504369;
 }
 
 /* Intro__Main */
 
 .intro__main{
     color: #000;
+}
+
+
+
+/* Toyota */
+
+.toyota{
+    position: absolute;
 }

@@ -1,28 +1,27 @@
 import React from 'react';
 import '../assets/css/styles.css';
-import semantir__logo from '../../pages/assets/img/semantir__logo.png';
+// import semantir__logo from '../../pages/assets/img/semantir__logo.png';
+import logo from '../../pages/assets/img/Logo.svg'
+import NavButton from './NavButton';
+import Nav from './Nav';
 
-const Header = () => {
+const Header = (props) => {
 
     return (
         <header className='header'>
+        
             <div className='container'>
                 <div className='header__iner'>
-                    <a href="#"><img className="semantir__logo" id="semantir__logo" src={semantir__logo} alt='semantir__logo'/></a>
-                        <nav className='nav'>
-                            <a className='nav__link' href='#'>Продукты</a>
-                            <a className='nav__link' href='#'>Тарифы</a>
-                            <a className='nav__link' href='#'>Партнеры</a>
-                            <a className='nav__link' href='#'>Блог</a>
-                        </nav>
+                    
+                <a href="#start__page">   
 
-                    <button className='nav__button' id='nav__button' onClick={()=>{
-                        alert(`it's button work`)
-                    }}>
+                    <img className="semantir__logo" id="semantir__logo" 
+                        src={logo} alt='semantir__logo'/>
+                        
+                </a>
+                <Nav/>
+                <NavButton/>
 
-                        Вход
-
-                    </button>
 
                 </div>
             </div>   
