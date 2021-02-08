@@ -1,0 +1,156 @@
+.container{
+    background: #FFFFFF;
+    color: #000000;
+    font-style: normal;
+    font-family: Montserrat;
+}
+
+.tarifiword{
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+.tarifi_flexbox{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    align-items: center;
+}
+
+.tarifi_flexchild{
+    filter: drop-shadow(0px 6px 10px rgba(46, 60, 80, 0.15));
+    border: 1px solid #472A7E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+}
+
+.tarifi_firstword{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 30px;
+}
+
+.tarifi_text{
+  margin: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 15px;
+}
+
+.tarifi_button{
+    background: #FAC300;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.tarifi_firstword_agency{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 27px;
+}
+
+.tarifi_text_agency{
+  margin: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 115px;
+}
+
+.tarifi_flexchild3{
+    width: 350px;
+    height: 350px;
+    filter: drop-shadow(0px 6px 10px rgba(46, 60, 80, 0.15));
+    border: 1px solid #472A7E;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.tarifi_flexchild2{
+    width: 400px;
+    height: 400px;
+    filter: drop-shadow(0px 14px 18px rgba(46, 60, 80, 0.15));
+    background: #472A7E;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.tarifi_firstword_author{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 45px;
+}
+
+.partnersword{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    margin: 100px 0 0 0;
+}
+
+.partners_flexbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+.containet_tryfree{
+    height: 227px;
+    background: #331B54;
+}
+
+.tryfree_flexbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tryfree_word{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FBFBFB;
+}
+
+.tryfree_email{
+    width: 588px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #979797;
+    background-color:#331B54;
+}
+
+.tryfree_button{
+    background: #FAC300;
+    border-radius: 4px;
+    Width:123px;
+    Height:56px;
+}
+
+.tryfree_flexbox > img{
+  margin: 39px 0px 0 0px;
+}
