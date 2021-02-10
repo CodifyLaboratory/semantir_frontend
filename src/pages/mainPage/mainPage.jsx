@@ -36,7 +36,7 @@ const MainPage = ()=> {
     }
 
 return (
-    <div>
+    <div className='div'>
         <header>
             <div className='container'>
                 <img className='logo' src={Logo} />
