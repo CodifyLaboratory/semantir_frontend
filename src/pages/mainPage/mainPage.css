@@ -1,10 +1,10 @@
 header{
     background:#f9f6ff;
-    width: 1500px;
+    width: 100%;
     
 }
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 16px;
 
@@ -19,19 +19,19 @@ header nav {
     
 }
 .logo{
-    width: 100px;
-    height: 90px;
-    left: 150px;
-    top: 23px;
+    width: 10%;
+    height: 9%;
+    left: 15%;
+    top: 2.3%;
 }
 
 .menu{
     display: flex;
     list-style: none;
-    margin-right: 68px;
+    margin-right: 5%;
 }
 .a1{
-    font-family: 'TT Norms Pro';
+    /* font-family: ; */
     font-size: 18px;
     margin-left: 30px;
     color: black;
@@ -47,7 +47,7 @@ header nav {
 button{
     width: 84px;
     height: 41px;
-    padding: 12px 24px;
+    padding: 12px 4px;
     background:purple;
     border-radius: 4px;
     color: white;
@@ -179,4 +179,13 @@ font-size: 40px;
     bottom: -850px;
     width: 200px;
     height: 200px;
+}
+
+.button2{
+    background: #f9f6ff;
+}
+
+.img6{
+    width: 40px;
+    height: 40px;
 }
