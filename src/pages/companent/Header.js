@@ -19,6 +19,7 @@ const Header = (props) => {
                         src={logo} alt='semantir__logo'/>
                         
                 </a>
+                
                 <Nav/>
                 <NavButton/>
 

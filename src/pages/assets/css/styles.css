@@ -15,7 +15,6 @@
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    /* min-width: device-width; */
 }
 
 @media (max-width: 1200px){

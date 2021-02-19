@@ -1,0 +1,173 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ADMIN__PAGES */
+
+.admin__page{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+/* admin__header */
+
+.admin__header{
+    /* position: relative; */
+    /* margin: 60px auto auto 350px; */
+    display: flex;
+}
+
+.admin__header__iner{
+    margin: 6% 0px 0px 15%;
+    display: flex;
+}
+
+.admin__header__input{
+    width: 400px;
+    height: 60px;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.admin__header__toolbar{
+    margin: 10% auto auto 110%;
+}
+
+/* admin__nav */
+
+.admin__nav{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+
+.admin__nav__logo{
+    width: 220px;
+    height: 193px;
+    margin: 50px 40px auto 40px;
+}
+
+/* admin__nav__link */
+
+.admin__nav__link{
+    margin: auto auto auto auto;
+}
+
+.admin__nav__link__header{
+    text-decoration:none;
+    padding: 0px 0px 0px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    word-spacing: 6px;
+}
+
+.admin__nav__link__main{
+    color: #222222;
+    opacity: 0.7;
+    width: 300px;
+    height: 50px;
+    padding: 10px 0px 0px 50px ;
+    word-spacing: 6px;
+    transition: background-color 0.2 linear;
+}
+
+.admin__nav__link__main:hover{
+    border: 1px solid #222222;
+    background-color: #ccbee4;
+    opacity: 1;
+}
+
+/* admin__nav__toolbar */
+
+.admin__nav__toolbar{
+    line-height: 40px;
+    margin: 20px 0px 0px 45px ;
+}
+
+.admin__nav__toolbar__link{
+    color: #4D4D4D;
+    text-decoration:none;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.admin__nav__toolbar__link:hover{
+    opacity: 1;
+}
+
+/* admin__main */
+
+
+.admin__main{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 50px 0px 0px 360px;
+}
+
+.admin__main__header{
+    width: 350px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+.admin__main__iner{
+    margin: 30px 0px 0px 0px;
+}
+
+.admin__main__iner__header{
+    display: flex;
+}
+
+.admin__main__iner__header__input__iner{
+    width: 600px;
+    height: 60px;
+    /* box */
+    background: #F9F9F9;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    /* text */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+.admin__main__iner__header__button{
+    width: 160px;
+    height: 60px;
+    left: 1010px;
+    top: 380px;
+    background: #472A7E;
+    border-color: #472A7E;
+    border-radius: 10px;
+    /* text */
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    outline: none;
+    text-align: center;
+    margin: 0px 0px 0px 10px ;
+}
+
