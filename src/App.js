@@ -1,12 +1,16 @@
 import './App.css';
-// import MainPage from './pages/mainPage/mainPage';
-import MainPage2Part from './pages/mainPage2part/main/main2part'
+import Footer from './pages/mainPage2part/footer/footer';
+import Partners from './pages/mainPage2part/partners/partners';
+import Tariffs from './pages/mainPage2part/tariffs/tariffs';
+import Blog from './pages/mainPage2part/blog/blog'
 
 function App() {
   return (
-    <div>
-     {/* <MainPage /> */}
-     <MainPage2Part/>
+    <div className="mainpage_2part">
+      <Tariffs/>
+      <Partners/>
+      <Blog/>
+      <Footer/>
     </div>
   );
 }
