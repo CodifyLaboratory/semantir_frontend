@@ -1,11 +1,14 @@
 .div{
     font-family: 'Montserrat', sans-serif;
+    width: 1425px;
+    height: 1404px;
+    
 }
 
 header{
     background:#f9f6ff;
     width: 100%;
-    
+    position: sticky;
 }
 .container {
     max-width: 100%;
@@ -22,7 +25,7 @@ header nav {
     display: flex;
     
 }
-.logo{
+#Header_logo{
     width: 10%;
     height: 9%;
     left: 15%;
@@ -43,6 +46,7 @@ header nav {
     transition: .3s;
     display: block;
     border-bottom: 1px solid transparent;
+    cursor: pointer;
 }
 .a1:hover {
     border-bottom: 1px solid black;
@@ -138,7 +142,7 @@ font-size: 40px;
     margin-right: 50px;
 }
 
-.about{
+.about_semantir{
     width: 100%;
     height: 600px;
 }
@@ -146,7 +150,8 @@ font-size: 40px;
 .about-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .pblock{
@@ -162,7 +167,7 @@ font-size: 40px;
 
 .pblock>h1{
     position: absolute;
-    left: 25px;
+    left: 85px;
     top: 350px;
     color: white;
 }
@@ -170,26 +175,47 @@ font-size: 40px;
 .card{
     text-align: left;
     width: 250px;
-    height: 410px;
-    margin: 40px 60px;
+    height: 450px;
+    margin: 40px 0px;
+    margin-right: -90px;
+    margin-left: -90px;
     background: #F7F7F7;
     z-index: 5;
     padding: 10px;
     border-radius: 10px;
+    position: relative;
 }
 
 .img5{
     position: absolute;
-    bottom: -830px;
+    bottom: -10px; 
     width: 220px;
     height: 230px;
 }
 
-.button2{
-    background: #f9f6ff;
+.slider{
+    width: 250px;
+    height: 60px;
+    margin: 450px 30px;
+    color: white;
 }
 
-.img6{
+.button1{
+    position: relative;
     width: 40px;
     height: 40px;
+    right: -600px;
+    top: -600px;
+    border-radius: 20px;
+    background:#472A7E;    
+}
+
+.button2{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    right: -580px;
+    top: -600px;
+    border-radius: 20px;
+    background: #472A7E; 
 }

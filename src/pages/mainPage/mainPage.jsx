@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './mainPage.css';
 import Logo from './assets/mainPage/Logo.svg';
 import Sun from './assets/mainPage/Ellipse 10.svg';
@@ -11,20 +11,38 @@ import Card1 from './assets/mainPage/about1.svg';
 import Card2 from './assets/mainPage/about2.svg';
 import Card3 from './assets/mainPage/about3.svg';
 import Card4 from './assets/mainPage/about4.svg';
-import Prev from './assets/mainPage/prev.svg';
-import Next from './assets/mainPage/next.svg'
 import Slick from "react-slick";
 import Slider from "react-slick";
 
 
+
 const MainPage = ()=> {
+
+    const arr = ['Маркетинговые агенства', 'SMM-менеджеры', 'SEO-специалисты', 'Копирайтеры', 'Блогеры', 'Онлайн магазины']
+    const newArr = arr.map((item)=><div key={item} className='slider'><h3>{item}</h3></div>)
+    const [prevState, setPrevState] = useState(true);
+    const [nextState, setNextState] = useState(false);
+
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        afterChange: (e) => {
+            console.log(e);
+            if(e === 0){
+            setPrevState(true)    
+            }else{
+                setPrevState(false)
+            }
+            if(e === 3){
+                setNextState(true)
+            }else{
+                setNextState(false)
+            }
+        }
     };
     let slider = React.createRef()
     const test = 2000
@@ -39,7 +57,7 @@ return (
     <div className='div'>
         <header>
             <div className='container'>
-                <img className='logo' src={Logo} />
+                <a id='Header_logo' href=""><img src={Logo} /></a>
                 <nav>
                     <ul className='menu'>
                         <li><a className='a1' href="#product">Продукты</a></li>
@@ -91,7 +109,7 @@ return (
                     </div>
                 </div>
             </div>
-            <div className="about">
+            <div className="about_semantir ">
             <div className="about-row">
                 <div className="card">
                 <h2>Робот - автор</h2>
@@ -117,32 +135,21 @@ return (
             </div>
             <div className="pblock">
                 <h1>Кому нужен Semantir:</h1>
-                <Slider ref={c => slider = c} {...settings}>
-                    <div key={1} className='slider'>
-                        <h3>Маркетинговые агенства</h3>
-                    </div>
-                    <div key={2} className='slider'>
-                        <h3>SMM-менеджеры</h3>
-                    </div>
-                    <div key={3} className='slider'>
-                        <h3>SEO-специалисты</h3>
-                    </div>
-                    <div key={4} className='slider'>
-                        <h3>копирайтеры</h3>
-                    </div>
-                    <div key={5} className='slider'>
-                        <h3>Блогеры</h3>
-                    </div>
-                    <div key={6} className='slider'>
-                        <h3>онлайн магазины</h3>
-                    </div>
+                <Slider  ref={c => slider = c} {...settings}>
+                    {newArr}
                 </Slider>
-        <button className="button2" onClick={previous}>
-            <img src={Prev} alt="previous" className='img6'/>
-          </button>
-          <button className="button2" onClick={next}>
-              <img src={Next} alt="next" className='img6'/>
-          </button>
+            <button disabled={prevState} className="button2" onClick={previous}>
+            <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" style={{transform: 'rotate(180deg)'}}>
+                <circle cx="25" cy="25" r="24.5" transform="rotate(-180 25 25)" fill="white" stroke="black" cursor="pointer"/>
+                <path d="M19.33 33.23L21.1 35L31 25.1L21.1 15.2L19.33 16.97L27.46 25.1L19.33 33.23Z" fill={!prevState ? "black" : "grey"}/>
+            </svg>
+            </button>
+            <button disabled={nextState} className="button1" onClick={next}>
+            <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" transform="rotate(-180 25 25)" fill="white" stroke="black" cursor="pointer"/>
+                <path d="M19.33 33.23L21.1 35L31 25.1L21.1 15.2L19.33 16.97L27.46 25.1L19.33 33.23Z" fill={!nextState ? "black" : "grey"}/>
+            </svg>
+            </button>
             </div>
             </div>
     </div>
