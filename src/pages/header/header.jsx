@@ -1,27 +1,26 @@
 import React from 'react';
-import './mainPage.css';
-import Logo from './assets/mainPage/Logo.svg';
+import {Link} from 'react-router-dom';
+import './header.css';
+import Logo from './../mainPage/assets/mainPage/Logo.svg';
 
-const MainPage = ()=> {
-
-const test = 2000
-
+const Header = ()=> {
 return (
     <div>
         <header>
             <div className='container'>
-                <img className='logo' src={Logo} />
+                <Link className='Header_logo' to="/" ><img src={Logo} alt="Логотип Semantir" /></Link>
                 <nav>
                     <ul className='menu'>
                         <li><a className='a1' href="#product">Продукты</a></li>
-                        <li><a className='a1' href="#">Тарифы</a></li>
-                        <li><a className='a1' href="#">Партнёры</a></li>
-                        <li><a className='a1' href="#">Новости</a></li>
+                        <li><a className='a1' href="#tariffc">Тарифы</a></li>
+                        <li><a className='a1' href="#partners">Партнёры</a></li>
+                        <li><a className='a1' href="#blog">Новости</a></li>
                     </ul>
-                    <button>Вход</button>
+                    <button><Link to="/auth">Вход</Link></button>
                  </nav>
             </div> 
         </header>
     </div>
 )
 }
+export default Header 

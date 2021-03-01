@@ -2,66 +2,6 @@
     font-family: 'Montserrat', sans-serif;
     width: 1425px;
     height: 1404px;
-    
-}
-
-header{
-    background:#f9f6ff;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-}
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 16px;
-
-}
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav {
-    display: flex;
-    
-}
-#Header_logo{
-    width: 10%;
-    height: 9%;
-    left: 15%;
-    top: 2.3%;
-}
-
-.menu{
-    display: flex;
-    list-style: none;
-    margin-right: 5%;
-}
-.a1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    margin-left: 30px;
-    color: black;
-    text-decoration: none;
-    transition: .3s;
-    display: block;
-    border-bottom: 1px solid transparent;
-    cursor: pointer;
-}
-.a1:hover {
-    border-bottom: 1px solid black;
-}
-
-button{
-    width: 84px;
-    height: 41px;
-    padding: 12px 4px;
-    background:purple;
-    border-radius: 4px;
-    color: white;
-    border: none;
 }
 
 .hom{
