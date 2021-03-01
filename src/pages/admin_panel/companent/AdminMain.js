@@ -1,15 +1,12 @@
 import React from "react";
 import "../assets/css/Styles.css";
 import magnifierLogo from '../../../pages/admin_panel/assets/img/magnifier.png'
+import AdminMainHeader from './AdminMainHeader'
 
 const AdminMain = () => {
   return (
     <div className="admin__main">
-      <div className="admin__main__header">
-        <h2>Привет, Арман!</h2>
-        Мы рады, что ты теперь с нами. Создай свой первый текст прямо сейчас.
-        Для этого введи название статьи в поле ниже.
-      </div>
+      <AdminMainHeader/>
       <div className="admin__main__iner">
         <div className="admin__main__iner__header">
           <div className="admin__main__iner__header__input">
@@ -25,8 +22,8 @@ const AdminMain = () => {
               }}
               className="admin__main__iner__header__button"
             >
-              {" "}
-              Создать{" "}
+              
+              Создать
             </button>
           </div>
         </div>
