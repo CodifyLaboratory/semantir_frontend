@@ -1,0 +1,68 @@
+.body{
+    background-image: url(./images/Error404.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.37);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(40px); */
+/* } */
+
+.error-style{
+    display: block;
+}
+
+.error-code{
+    position: absolute;
+    width: 301px;
+    height: 183px;
+    left: 570px;
+    top: 310px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 150px;
+    line-height: 183px;
+    color: white;
+}
+
+.error-text{
+    position: absolute;
+    width: 650px;
+    height: 44px;
+    left: 450px;
+    top: 500px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: justify;
+    color: white;
+}
+
+.b-error{
+    position: absolute;
+    width: 266px;
+    height: 60px;
+    left: 600px;
+    top: 570px;
+    background: rgba(0, 0, 0, 0.37);
+    box-sizing: border-box;
+    backdrop-filter: blur(40px);
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.b-error:hover{
+    border-bottom: 1px solid white;
+}
+
+.gelaxy-error{
+    width: 100%;
+    height: 100%;
+}

@@ -79,6 +79,7 @@
 }
 
 .blog{
+    flex: 0 1 33.333%;
     width: 200px;
     height: 200px;
     margin-left: 50px;

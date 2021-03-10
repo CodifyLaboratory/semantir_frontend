@@ -70,11 +70,11 @@ const MainPage = ()=> {
     const arr = ['Маркетинговые агенства', 'SMM-менеджеры', 'SEO-специалисты', 'Копирайтеры', 'Блогеры', 'Онлайн магазины']
     const newArr = arr.map((item)=><div key={item} className='slider'><h3>{item}</h3></div>)
     const [prevState, setPrevState] = useState(true);
-    const [nextState, setNextState] = useState(false);
+    const [nextState, setNextState] = useState(false); 
 
 
     const settings = {
-        dots: false,
+        dots: false, 
         infinite: false,
         speed: 700,
         slidesToShow: 3,

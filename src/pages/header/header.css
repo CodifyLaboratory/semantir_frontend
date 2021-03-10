@@ -1,3 +1,45 @@
+@-webkit-keyframes slideInLeft {
+    0% {
+      transform: translate3d(-250px, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translate3d(-250px, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-webkit-keyframes slideOutLeft {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-250px, 0, 0);
+      visibility: hidden;
+    }
+  }
+  @keyframes slideOutLeft {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-250px, 0, 0);
+      visibility: hidden;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
 header{
     background:#f9f6ff;
     position: fixed;

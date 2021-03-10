@@ -4,8 +4,8 @@ import './header.css';
 import Logo from './../mainPage/assets/mainPage/Logo.svg';
 
 const Header = ()=> {
-return (
-    <div>
+    return(
+        <div>
         <header>
             <div className='container'>
                 <Link className='Header_logo' to="/" ><img src={Logo} alt="Логотип Semantir" /></Link>
@@ -21,6 +21,6 @@ return (
             </div> 
         </header>
     </div>
-)
+    )
 }
 export default Header 
