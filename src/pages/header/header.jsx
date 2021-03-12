@@ -2,8 +2,10 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './header.css';
 import Logo from './../mainPage/assets/mainPage/Logo.svg';
+import {withRouter} from 'react-router'
 
-const Header = ()=> {
+const Header = (props)=> {
+    console.log(props);
     return(
         <div>
         <header>
@@ -23,4 +25,4 @@ const Header = ()=> {
     </div>
     )
 }
-export default Header 
+export default withRouter(Header)

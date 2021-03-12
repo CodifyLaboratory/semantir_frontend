@@ -8,23 +8,20 @@ import { BrowserRouter as Router,  Switch, Route} from 'react-router-dom';
 function App() {
   return (
    <Router>
-           <div className="App"> 
-       {/* <MainPage /> */}
-       <Header/>
-       <Switch>
-           <Route path="/" exact>
-             <MainPage />
-             </Route>
-         </Switch>
-         <Switch>
-            {/* <Route path='' exact>
-               <Error404 />
-             </Route> */}
-             <Route path='' exact component={Error404} />
-         </Switch>
-     </div>
-    </Router>
-   );
+    <div className="App"> 
+      <Switch>
+        <Route exact path="/">
+          <Header/>
+          <MainPage />
+        </Route>
+        <Route exact path='/h'>
+          <Header/>
+        </Route>
+        <Route path='*' exact component={Error404} />
+      </Switch>
+    </div>
+  </Router>
+  );
 }
 
 export default App;

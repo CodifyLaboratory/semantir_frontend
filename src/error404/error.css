@@ -1,15 +1,52 @@
+.header_error{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.37);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: saturate(80%);
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.container_error {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+.header_error .container_error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_error nav {
+    display: flex;
+    
+}
+.logo{
+    width: 10%;
+    height: 9%;
+    left: 15%;
+    top: 2.3%;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-right: 5%;
+}
+.a1_error{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+    color: white;
+}
+
 .body{
+    height: 100vh;
     background-image: url(./images/Error404.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* header{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.37);
-    border: 1px solid #FFFFFF;
-    backdrop-filter: blur(40px); */
-/* } */
 
 .error-style{
     display: block;
@@ -52,14 +89,15 @@
     top: 570px;
     background: rgba(0, 0, 0, 0.37);
     box-sizing: border-box;
-    backdrop-filter: blur(40px);
-    border-radius: 15px;
+    backdrop-filter: saturate(80%);
+    color: white;
     text-decoration: none;
-    transition: .3s;
+    border-radius: 15px;
 }
 
-.b-error:hover{
-    border-bottom: 1px solid white;
+.b-error a{
+    color: white;
+    text-decoration: none;
 }
 
 .gelaxy-error{
