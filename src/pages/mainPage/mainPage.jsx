@@ -74,7 +74,7 @@ const MainPage = ()=> {
 
 
     const settings = {
-        dots: false, 
+        dots: false,
         infinite: false,
         speed: 700,
         slidesToShow: 3,

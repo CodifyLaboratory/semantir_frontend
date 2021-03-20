@@ -1,7 +1,7 @@
 import './error.css'
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Logo from './../pages/mainPage/assets/mainPage/Logo.svg'
+import Logo from './../mainPage/assets/mainPage/Logo.svg'
 
 const Error404 = () => {
     return(
