@@ -1,0 +1,27 @@
+.button{
+    background: #FAC300;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.box_title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.box_title > div{
+    margin: 4% 2.5% 0 2.5%;
+}
+.price{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 4%;
+}
+

@@ -1,0 +1,18 @@
+.title{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+}
+.color_white{
+    color: #FFFFFF;
+}
+.font_small{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+.font_middle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}

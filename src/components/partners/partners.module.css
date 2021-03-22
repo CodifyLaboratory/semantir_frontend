@@ -1,0 +1,26 @@
+.container{
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 10% 0 10%;
+}
+.title{
+    margin: 10% 0 0 0;
+}
+.box{
+    margin: 3% 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img{
+    width: 125px;
+    height: 125px;
+}
+.mailru{
+    width: 150px;
+    height: 150px;
+}
+.sber{
+    width: 150px;
+    height: 50px;
+}
